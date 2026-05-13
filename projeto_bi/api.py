@@ -18,7 +18,7 @@ def analisar_bot(texto_pdf:str,pergunta_usuario):
         resposta_bot = cliente.chat.completions.create(model="gpt-4o-mini",
                                                            messages=lista_mensagem,
                                                            max_completion_tokens=1000,
-                                                           temperature=0.1
+                                                           temperature=0.1,
                                                            response_format={"type":"json_object"})
         tokens = resposta_bot.usage.total_tokens
         maximo_token = (tokens/1000)*0.00015 #Custo total
