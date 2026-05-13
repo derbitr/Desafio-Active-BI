@@ -6,12 +6,14 @@ Esse projeto utiliza conceitos de arquitetura limpa e modularização para teste
 Utilizei o modelo *gpt-4o-mini* pelo seu baixo custo de tokens e por ter uma alta perfomance em processo de extração de dados
 
 *Como instalar*
+
 *Clone ou baixe o repositório*
 ```bash
 git clone "url-do-repositório"
 cd Desafio-Active-BI
 
 **Configurar o ambiente bash**
+
 criar o ambiente = python -m venv venv
 
 ativar no windows = venv/scripts/activate
