@@ -1,0 +1,6 @@
+os
+python-dotenv
+logging
+json
+pdfplumber
+openai
