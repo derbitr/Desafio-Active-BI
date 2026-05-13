@@ -20,7 +20,7 @@ ativar no windows = venv/scripts/activate
 
 ativar no linux/mac = source venv/bin/activate
 
-#Dependências necessárias#
+#Dependências necessárias
 pip install -r requirements.txt
 
 #Variáveis do ambiente
