@@ -12,7 +12,7 @@ Utilizei o modelo *gpt-4o-mini* pelo seu baixo custo de tokens e por ter uma alt
 git clone "url-do-repositório"
 cd Desafio-Active-BI
 
-##Configurar o ambiente bash##
+#Configurar o ambiente bash
 
 criar o ambiente = python -m venv venv
 
@@ -20,13 +20,12 @@ ativar no windows = venv/scripts/activate
 
 ativar no linux/mac = source venv/bin/activate
 
-*Dependências necessárias!*
-bash
+#Dependências necessárias#
 pip install -r requirements.txt
 
-##Variáveis do ambiente(.env)##
+#Variáveis do ambiente
 OPENAI_API_KEY = sua_chave
 
-**Executar**
+#Executar
 python projeto_bi/main.py
 
