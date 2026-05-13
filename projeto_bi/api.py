@@ -20,9 +20,14 @@ def analisar_bot(texto_pdf:str,pergunta_usuario):
                                                            max_completion_tokens=1000,
                                                            temperature=0.1,
                                                            response_format={"type":"json_object"})
-        tokens = resposta_bot.usage.total_tokens
-        maximo_token = (tokens/1000)*0.00015 #Custo total
-        logging.info(f"Custo total: {maximo_token:.6f}")
+        #Precisei pesquisar a fundo a documentação de pricing pois fiz o cálculo erroneamente
+        
+        token_entrada = resposta_bot.usage.prompt_tokens
+        token_saida = resposta_bot.usage.completion_tokens
+        custo_token_entrada = (token_entrada/1000000)*0.15 #Custo de entrada (enviar)
+        custo_token_saida = (token_saida/1000000)*0.60
+        custo_total = custo_token_entrada + custo_token_saida
+        logging.info(f"Custo total: {custo_total:.6f}")
         return resposta_bot.choices[0].message.content
     except Exception:
         return "{}"
