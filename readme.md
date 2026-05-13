@@ -2,7 +2,7 @@ AI - Analisador de Documentos PDF
 
 Esse projeto utiliza conceitos de arquitetura limpa e modularização para testes singulares nos arquivos, separação entre bibliotecas e orquestração de registros, utilizando bibliotecas como pdfplumber para extração de texto em arquivos PDF, a biblioteca logging para informações de registros e o uso da API da openai para criar um prompt json utilizando lógica da programação para perguntas e respostas.
 
-**Justificativa**
+**Justificativa**:
 Utilizei o modelo *gpt-4o-mini* pelo seu baixo custo de tokens e por ter uma alta perfomance em processo de extração de dados
 
 **Como instalar**
