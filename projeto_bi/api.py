@@ -24,7 +24,7 @@ def analisar_bot(texto_pdf:str,pergunta_usuario):
         
         token_entrada = resposta_bot.usage.prompt_tokens
         token_saida = resposta_bot.usage.completion_tokens
-        custo_token_entrada = (token_entrada/1000000)*0.15 #Custo de entrada (enviar)
+        custo_token_entrada = (token_entrada/1000000)*0.15
         custo_token_saida = (token_saida/1000000)*0.60
         custo_total = custo_token_entrada + custo_token_saida
         logging.info(f"Custo total: {custo_total:.6f}")
